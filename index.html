@@ -1,0 +1,49 @@
+<!-- SAMPLE HTML!!!! YOU CAN USE IT TO GUIDE -->
+<html lang="en">
+ <head>
+  <title>95-KEYGEN-JS</title>
+  <!-- PAY ATTENTION TO THIS!! -->
+  <script src="95keygen.js"></script>
+  <script>
+   function generateAnother(version) {
+    //set the textbox to generate()'s return value
+    document.getElementById("htmlKeyInput").value = generate(version);
+   }
+   
+   //when the page finishes loading, run geneerateAnother
+   document.addEventListener('DOMContentLoaded', function() {
+    generateAnother();
+   }, false);
+  </script>
+  <style type="text/css">
+   .mainpage {
+    color: black;
+    background-color: white;
+    border: solid;
+    border-color: solid;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+   }
+
+   .bottomtext {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    opacity: 50%;
+   }
+  </style>
+ </head>
+ <body>
+  <div class="mainpage">
+   <h1>95-KEYGEN-JS</h1>
+   <p>A JavaScript keygen for Doors 95 and every Macroshaft software in the period. <a href="https://github.com/xproot/95-KEYGEN-JS" alt="Github link" title="Github link">Check out the source!</a></p>
+   <noscript>Your browser doesn't support or doesn't have JavaScript enabled! This WILL NOT WORK!</noscript>
+   <input type="text" id="htmlKeyInput" value="Key will appear here..." readonly>
+   <button onClick="generateAnother()">Generate another retail key</button>
+   <button onClick="generateAnother('oem')">Generate another OEM key</button>
+  </div>
+ <p class="bottomtext">Rewritten by <a href="https://github.com/xproot">xproot</a>, original code by <a href="https://github.com/SashiDegodeshi">Sashi</a></p>
+ </body>
+</html>
