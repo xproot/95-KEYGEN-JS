@@ -14,7 +14,7 @@ function generateMsSerial(ver) {
         //choose a random year from the array
         var randomYear = String(yearArray[Math.floor(Math.random() * yearArray.length)]);
         //make a random day
-        var aRandomDay = String(parseInt(Math.random() * (367 - 001) + 001));
+        var aRandomDay = String(parseInt(Math.random() * (366 - 001) + 001));
         //format the day to XXX
         if (aRandomDay <= 9)
             randomDay = '00' + aRandomDay;
