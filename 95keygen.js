@@ -1,9 +1,9 @@
 /*95-KEYGEN-JS - rewritten by xproot (https://github.com/xproot) - original python version and some explaining by sashi (https://github.com/SashiDegodeshi) (https://github.com/SashiDegodeshi/w95keygen-python)
 no console is used to remain compability to those old browsers*/
 //DECLARATIONS
-function generate(ver) {
+function generateMsSerial(ver) {
  if (ver == "oem") {
-  //if generate("oem") then
+  //if generateMsSerial("oem") then
   //make some variables 0, (just to generate the variables)
   var generatedKey = 0;
   var totalSum = 0;
@@ -38,10 +38,10 @@ function generate(ver) {
   
   if(sevenLast >= 8) 
    //check if the last digit of middleSeven is greater than or equal to 8 and try again if it is
-   return generate('oem');
+   return generateMsSerial('oem');
   else if(sevenLast == 0) 
    //check if the last digit of middleSeven is 0 and try again if it is
-   return generate('oem');
+   return generateMsSerial('oem');
   else if (parseInt(totalSum) % 7 == 0) {
    //if the total sum of middleSeven is divisible by 7 then
    //format it to XXXXX-OEM-XXXXXXX-XXXXX
@@ -50,7 +50,7 @@ function generate(ver) {
    return generatedKey;
   } else
    //else then try again
-   return generate('oem');
+   return generateMsSerial('oem');
   return generatedKey;
  } else {
   //else then
@@ -73,13 +73,13 @@ function generate(ver) {
 
  if(uselessThree.indexOf(parseInt(firstThree)) !== -1)
   //check if our firstThree are in this array and if it is try again
-  return generate();
+  return generateMsSerial();
  else if(sevenLast >= 8) 
   //check if the last digit of lastSeven is greater than or equal to 8 and try again if it is
-  return generate();
+  return generateMsSerial();
  else if(sevenLast == 0) 
   //check if the last digit of lastSeven is 0 and try again if it is
-  return generate();
+  return generateMsSerial();
  else if (parseInt(totalSum) % 7 == 0) {
   //if the total sum of lastSeven is divisible by 7 then
   //format it to XXX-XXXXXXX
@@ -88,6 +88,6 @@ function generate(ver) {
   return generatedKey;
  } else
   //else then try again
-  return generate();
+  return generateMsSerial();
  }
 }
