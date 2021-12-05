@@ -21,5 +21,6 @@ function generateSerial() {
 ```
 <p id="serial"></p><button onClick="generateSerial()">get a retail serial!</button>
 ```
-and you should have something like this
 ![image](https://user-images.githubusercontent.com/49620652/144756899-bd6f1d1f-0afe-4309-bddc-80ad61861fd0.png)
+
+and you should have something like this
