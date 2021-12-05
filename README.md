@@ -1,5 +1,5 @@
 # 95-KEYGEN-JS
-A JavaScript keygen for Doors 95 and every Macroshaft software in the period. [Live Demo](https://xproot.github.io/95-KEYGEN-JS/)
+A keygen rewritten to JavaScript for Doors 95 and every Macroshaft software in the period. [Live Demo](https://xproot.github.io/95-KEYGEN-JS/) [Original Python Version](https://github.com/SashiDegodeshi/w95keygen-python)
 
 ## Usage
 generateMsSerial(ver);
