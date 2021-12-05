@@ -7,8 +7,8 @@ Where ver can be "oem" or anything else (anything else will be interpreted as a 
 once ran, it will return a serial.
 
 ## Quickly install it in your website
-Add `<script src="https://raw.githubusercontent.com/xproot/95-KEYGEN-JS/main/95keygen.js"></script>` in a convienent place (or download it!)
-Make a quick function that takes the return value of generateMsSerial() or generateMsSerial('oem') and puts it somewhere
+Download 95keygen.js from [here](https://raw.githubusercontent.com/xproot/95-KEYGEN-JS/main/95keygen.js) and add `<script src="95keygen.js"></script>` in a convienent place then make a quick function that takes the return value of generateMsSerial() or generateMsSerial('oem') and puts it somewhere
+
 EXAMPLE
 ```
 <script>
@@ -21,3 +21,5 @@ function generateSerial() {
 ```
 <p id="serial"></p><button onClick="generateSerial()">get a retail serial!</button>
 ```
+and you should have something like this
+![image](https://user-images.githubusercontent.com/49620652/144756899-bd6f1d1f-0afe-4309-bddc-80ad61861fd0.png)
