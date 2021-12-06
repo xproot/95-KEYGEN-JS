@@ -7,8 +7,8 @@ Where ver can be "oem" or anything else (anything else will be interpreted as a 
 once ran, it will return a serial.
 
 ## Quickly install it in your website
-Download 95keygen.js from [here](https://raw.githubusercontent.com/xproot/95-KEYGEN-JS/main/95keygen.js) and add `<script src="95keygen.js"></script>` in a convienent place **or** you can skip downloading and uploading a js file by adding `<script src="https://xproot.neocities.org/projects/js/95keygen.js"></script>
-<script>` and after you've properly inserted the script make a quick function that takes the return value of generateMsSerial() or generateMsSerial('oem') and puts it somewhere
+Download 95keygen.js from [here](https://raw.githubusercontent.com/xproot/95-KEYGEN-JS/main/95keygen.js) and add `<script src="95keygen.js"></script>` in a convienent place **or** you can skip downloading and uploading a js file by adding 
+```<script src="https://xproot.neocities.org/projects/js/95keygen.js"></script>``` and after you've properly inserted the script make a quick function that takes the return value of generateMsSerial() or generateMsSerial('oem') and puts it somewhere
 
 EXAMPLE
 ```
@@ -31,4 +31,4 @@ function generateSerial(version) {
 
 
 
-and you should have something like this
+and you should have something like this _(I also recommend seeing the index.html as that works as an example website too.)_
