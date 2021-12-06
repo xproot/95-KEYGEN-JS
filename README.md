@@ -7,20 +7,28 @@ Where ver can be "oem" or anything else (anything else will be interpreted as a 
 once ran, it will return a serial.
 
 ## Quickly install it in your website
-Download 95keygen.js from [here](https://raw.githubusercontent.com/xproot/95-KEYGEN-JS/main/95keygen.js) and add `<script src="95keygen.js"></script>` in a convienent place then make a quick function that takes the return value of generateMsSerial() or generateMsSerial('oem') and puts it somewhere
+Download 95keygen.js from [here](https://raw.githubusercontent.com/xproot/95-KEYGEN-JS/main/95keygen.js) and add `<script src="95keygen.js"></script>` in a convienent place **or** you can skip downloading and uploading a js file by adding `<script src="https://xproot.neocities.org/projects/js/95keygen.js"></script>
+<script>` and after you've properly inserted the script make a quick function that takes the return value of generateMsSerial() or generateMsSerial('oem') and puts it somewhere
 
 EXAMPLE
 ```
 <script>
-function generateSerial() {
- document.getElementById("serial").innerText = generateMsSerial();
+function generateSerial(version) {
+ document.getElementById("serial").innerText = generateMsSerial(version);
 }
 </script>
 ```
-... (somewhere in your body) ...
+
+... (and somewhere in your body) ...
+
 ```
-<p id="serial"></p><button onClick="generateSerial()">get a retail serial!</button>
+<p id="serial"></p>
+<button onClick="generateSerial()">get a retail serial!</button>
+<button onClick="generateSerial('oem')">get a oem serial!</button>
 ```
-![image](https://user-images.githubusercontent.com/49620652/144756899-bd6f1d1f-0afe-4309-bddc-80ad61861fd0.png)
+
+![image](https://user-images.githubusercontent.com/49620652/144774380-c49c7419-9ac5-4c87-a49f-9a2b2ef6d4fa.png)![image](https://user-images.githubusercontent.com/49620652/144774407-af71e42a-c6b4-445d-b7d1-d18abb352132.png)
+
+
 
 and you should have something like this
