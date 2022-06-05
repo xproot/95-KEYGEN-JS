@@ -2,7 +2,7 @@
 A keygen rewritten to JavaScript for Doors 95 and every Macroshaft software in the period. [Live Demo](https://xproot.github.io/95-KEYGEN-JS/) - [Original Python Version](https://github.com/SashiDegodeshi/w95keygen-python)
 
 ## Usage
-generateMsSerial(ver);
+`generateMsSerial(ver);`
 Where ver can be "oem" or anything else (anything else will be interpreted as a retail serial).
 once ran, it will return a serial.
 
