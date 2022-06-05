@@ -8,7 +8,7 @@ once ran, it will return a serial.
 
 ## Quickly install it in your website
 Download 95keygen.js from [here](https://raw.githubusercontent.com/xproot/95-KEYGEN-JS/main/95keygen.js) and add `<script src="95keygen.js"></script>` in a convienent place **or** you can skip downloading and uploading a js file by adding 
-```<script src="https://xproot.neocities.org/projects/js/95keygen.js"></script>``` and after you've properly inserted the script make a quick function that takes the return value of generateMsSerial() or generateMsSerial('oem') and puts it somewhere
+```<script src="https://xproot.neocities.org/projects/js/95keygen.js"></script>``` (only HTTPS though, not perfect) and after you've properly inserted the script make a quick function that takes the return value of generateMsSerial() or generateMsSerial('oem') and puts it somewhere
 
 EXAMPLE
 ```
