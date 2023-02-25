@@ -52,7 +52,45 @@ function generateMsSerial(ver) {
             //else then try again
             return generateMsSerial('oem');
         return generatedKey;
-    } else {
+    } else if (ver == "11") {
+		//if generateMsSerial("11")
+        //make some variables 0, (just to generate the variables)
+        var generatedKey = 0;
+        var totalSum = 0;
+        //generate a random number and convert it to string
+        var randomNumber = String(Math.random());
+        //take only the revelant parts of the random number (why does this generate a valid KEY??) answer: because it's trying various times
+        var generatedFullKey = randomNumber.substr(2, 12);
+        var firstThree = generatedFullKey.substr(0, 3);
+		//make the last digit on the first part a sum of the last digit and 1/2
+		var fourthFirst = +firstThree.substr(2) + Math.floor(Math.random() * (3 - 1) + 1);
+        var lastSeven = generatedFullKey.substr(3, 7);
+        var sevenLast = parseInt(lastSeven.substr(6, 7));
+
+		if (fourthFirst > 9)
+			//if the fourth digit on the first part is bigger than 9 (10 or 11) we overflow to 0 or 1
+			fourthFirst-=10;
+		
+        //for every character in lastSeven sum it in totalSum
+        for (var i = 0; i < lastSeven.length; i++)
+            totalSum = totalSum + parseInt(lastSeven.substr(i, 1))
+
+        if (sevenLast >= 8)
+            //check if the last digit of lastSeven is greater than or equal to 8 and try again if it is
+            return generateMsSerial("11");
+        else if (sevenLast == 0)
+            //check if the last digit of lastSeven is 0 and try again if it is
+            return generateMsSerial("11");
+        else if (parseInt(totalSum) % 7 == 0) {
+            //if the total sum of lastSeven is divisible by 7 then
+            //format it to XXX-XXXXXXX
+            generatedKey = firstThree + fourthFirst + "-" + lastSeven;
+            //return the key
+            return generatedKey;
+        } else
+            //else then try again
+            return generateMsSerial("11");
+	} else {
         //else then
         //make some variables 0, (just to generate the variables)
         var generatedKey = 0;

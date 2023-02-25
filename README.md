@@ -1,5 +1,5 @@
 # 95-KEYGEN-JS
-A keygen rewritten to JavaScript for Doors 95 and every Macroshaft software in the period. [Live Demo](https://xproot.github.io/95-KEYGEN-JS/) - [Original Python Version](https://github.com/SashiDegodeshi/w95keygen-python)
+A keygen rewritten to JavaScript for Doors 95 and every Macroshaft software in the period. [Live Demo](https://xproot.github.io/95-KEYGEN-JS/) - [Original Python Version](https://github.com/SashiDegodeshi/w95keygen-python) - [Thanks to this amazing source too](https://gurney.dev/posts/mod7/)
 
 ## Usage
 `generateMsSerial(ver);`
@@ -25,6 +25,7 @@ function generateSerial(version) {
 <p id="serial"></p>
 <button onClick="generateSerial()">get a retail serial!</button>
 <button onClick="generateSerial('oem')">get a oem serial!</button>
+<button onClick="generateSerial('11')">get a 11-digit serial!</button>
 ```
 
 ![image](https://user-images.githubusercontent.com/49620652/144774380-c49c7419-9ac5-4c87-a49f-9a2b2ef6d4fa.png)![image](https://user-images.githubusercontent.com/49620652/144774407-af71e42a-c6b4-445d-b7d1-d18abb352132.png)
