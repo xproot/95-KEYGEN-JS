@@ -3,7 +3,7 @@ A keygen rewritten to JavaScript for Doors 95 and every Macroshaft software in t
 
 ## Usage
 `generateMsSerial(ver);`
-Where ver can be "oem" or anything else (anything else will be interpreted as a retail serial).
+Where ver can be "oem", "11", or anything else (anything else will be interpreted as a retail serial).
 once ran, it will return a serial.
 
 ## Quickly install it in your website
