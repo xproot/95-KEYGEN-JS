@@ -28,7 +28,9 @@ function generateSerial(version) {
 <button onClick="generateSerial('11')">get a 11-digit serial!</button>
 ```
 
-![image](https://user-images.githubusercontent.com/49620652/144774380-c49c7419-9ac5-4c87-a49f-9a2b2ef6d4fa.png)![image](https://user-images.githubusercontent.com/49620652/144774407-af71e42a-c6b4-445d-b7d1-d18abb352132.png)
+![image](https://user-images.githubusercontent.com/49620652/221368790-4ffd2e26-a579-4553-8eed-bb255602d7ae.png)![image](https://user-images.githubusercontent.com/49620652/221368807-146bf608-e95f-4a30-ab1f-ee0fdbbef2b3.png)![image](https://user-images.githubusercontent.com/49620652/221368814-ec8ae085-30e4-4665-b13d-801257ee29d2.png)
+
+
 
 
 
